@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -msbox-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #562974;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+	font-family: 'Indie Flower', cursive;
+}
+
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.work-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+    margin-bottom: 5rem;
+}
+.work-item:last-child{
+    margin-bottom: 0;
+}
+.video {
+    height: 50vh;
+}
+.work-img{
+    position: relative;
+    margin-top: -170px;
+    margin-left: -1000px;
+    flex: 1;
+}
+video {
+    height: 90vh;
+}
+.work-discription{
+    margin-left: 30px;
+    flex: 1;
+}
+
+.work-discription h1{
+    font-size: 90px;
+    font-weight: 400;
+    margin: 1rem 0;
+    user-select: none;
+	font-family: 'Poiret One', cursive;
+}
+.work-discription h6{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.4;
+    user-select: none;
+	font-family: 'Poiret One', cursive;
+}
+.work-discription p {
+    margin-top: 20px;
+    font-size: 20px;
+    user-select: none;
+}
+.work-discription .cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 30px;
+    color: #562974;
+    font-weight: 500;   
+	font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.work-discription .cta:hover{
+    color: #8b4ab6;
+}
+
+.work-discription-small h1{
+    font-size: 90px;
+    font-weight: 300;
+    margin: 1rem 0;
+	font-family: 'Poiret One', cursive;
+    user-select: none;
+}
+.work-discription-small h6{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.4;
+	font-family: 'Poiret One', cursive;
+    user-select: none;
+}
+.work-discription-small p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.work-discription-small .cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 30px;
+    font-weight: 500;
+    color: #562974;
+	font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.work-discription-small .cta:hover{
+    color: #8b4ab6;
+}
+.smallScreen {
+    display: none;
+    width: 100%;
+    margin-top: 20vh;
+    height: 100vh;
+    color: #562974;
+    text-align: center;
+    overflow: hidden;
+}
+.download {
+    text-decoration: none;
+    color: #562974;
+}
+.download:hover {
+    color: #8b4ab6;
+}
+/* Modal Start*/
+
+#startModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: #ebf0f154;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+	color: #562974;
+    width: 50%;
+    border: 2px solid #562974;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration:1.5s;
+
+}
+
+.modal-header h2, .modal-footer h3{
+    margin: 0;
+}
+.modal-header {
+    padding: 15px;
+}
+.modal-body {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.modal-footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.closeBtn {
+    color: #562974;
+    float: right;
+    font-size: 40px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #bc75eb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.buttons {
+    text-align: center;
+}
+button {
+    background-color: #fff;
+    color: #562974;
+    width: 90px;
+    height: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poiret One', cursive;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #562974;
+    color: #fff;
+}
+@keyframes modalopen{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+/*Modal End*/
+
+@media (max-width: 1000px) {
+    .work {
+        display: none;
+    }
+    .smallScreen {
+        display: block;
+    }
+}

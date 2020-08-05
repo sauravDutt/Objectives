@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+        />
+
+    <title>Objectives</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="join-container">
+        <main class="test">
+            <header class="join-header" style="border-bottom: 2px solid rgb(94, 0, 117);">
+                <img  class= "logo-main" src="img/objective.gif" style="width: 440px; margin-left: -40px;" alt="logo">
+                <h1 style="color: rgb(94, 0, 117);">OBJECTIVES<span style="color: rgb(96, 39, 110);"> | SD</span></h1>
+            </header>
+            <p> v 1.05  <span style="float: right;"><a href="index.html" style="text-decoration: none; color: #562974; font-size: 14px; margin-left: -10px;"><i class="fas fa-redo"></i></a></span></p>
+            <p   style="text-align: center; color: rgb(94, 0, 117); margin-top: 7px;"><a href="#" id="add" style="text-decoration: none;color: rgb(94, 0, 117);">Add Objective</a> | <a href="#" id="brouse" style="text-decoration: none;color: rgb(94, 0, 117);">Brouse Objectives</a> | <a href="#" id="modalBtn" style="text-decoration: none; color: rgb(94, 0, 117);">Info</a></p>
+            <p  class="footer" style="color: rgb(94, 0, 117);" >&copy; 2020 <a href="https://www.sauravdutt.tech/">sauravdutt.tech</a>.</p>
+        </main>
+    </div>
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn" id="closeBtn">
+                    &times;
+                </span>
+                <h2 style="color: rgb(94, 0, 117);">OBJECTIVES<span style="color: rgb(96, 39, 110);"> | SD</span></h2>
+            </div>
+            <div class="modal-body">
+                <p>
+                    The idea behind this application is to inclease productivity by sheduling the entire workflow in the form of small achievable objectives. 
+                </p>
+                <p>
+                    The working of the application is pritty simple the user will first havto sign up and then sign in, after successfully signing in the application the user will come on this section where he/she will have 4 options either sign out or add Objecrive or Brouse Objective or Info with the link to the developer's portfolio website in the footer.
+                    It is a simple application not much functionality the user can only add objective and can marked done when completed. This is a web and a brouser application.  
+                </p>
+                <p>
+                    Also my first Original Application, made with Vanilla js(HTML5, CSS3, JavaScript), Node js, Express, MongoDB ( Cloud ). The Idea and the Code every thing is Original.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <h3>&copy; 2020 <a href="https://www.sauravdutt.tech/" style="text-decoration: none;">sauravdutt.tech</a></h3>
+            </div>
+        </div>
+        
+    </div>
+    <div id="brouseModal" class="modalBrouse">
+        <div class="modal-content-brouse">
+            <div class="modal-header">
+                <span class="closeBtn" id="closeBtnBrouse">
+                    &times;
+                </span>
+                <h2 style="color: rgb(94, 0, 117);">BROUSE<span style="color: rgb(96, 39, 110);"> Objectives</span></h2>
+                <p>All Your Posted Objectives will Apear hear</p>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <input
+							type="text"
+							name="searchObjecrive"
+							id="filter"
+							placeholder="Search Objective Title"
+                            required
+                            style=
+                            "
+                                margin-top: 15px;
+                                border-radius: 8px;
+                                text-align: center;
+                                border: 2px solid #562974;
+                                color: #562974;
+                                font-size: 20px;
+                                font-family: 'Indie Flower', cursive;
+                                height: 5vh;
+                                width: 100%;
+
+                            "
+                        />
+                        <br><br>
+                   <ul id="objectivesDashBoard" class="objecrives-body">
+                       
+                   </ul> 
+                </p>
+            </div>
+            <div class="modal-footer">
+                <h3>&copy; 2020 <a href="https://www.sauravdutt.tech/" style="text-decoration: none;">sauravdutt.tech</a></h3>
+            </div>
+        </div>
+    </div>
+    <div id="addModal" class="modalAdd">
+        <div class="modal-content-add">
+            <div class="modal-header">
+                <span class="closeBtn" id="closeBtnAdd">
+                    &times;
+                </span>
+                <h2 style="color: rgb(94, 0, 117);">Add<span style="color: rgb(96, 39, 110);"> Objectives</span></h2>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: center;">
+                     An Objective is a small achievable goal, combination of various objectives formulates a solution to a problem or a project. In simple words A Task or a project can be braken down 
+                     into small achievable objectives, for accounting one of such Objective fill the following and press POST, this will make an entry in your Objectives Dashboard (Brouse Objectives).
+                </p>
+                <p style="text-align: center; padding: 20px;">
+                    <form id="addForm" style="margin-top: -10px; padding: 0;">
+                        <input
+                                type="text"
+                                name="objective"
+                                id="objecriveEntry"
+                                placeholder="Enter Objective Title"
+                                required
+                                style=
+                                "
+                                    margin-top: 15px;
+                                    border-radius: 8px;
+                                    text-align: center;
+                                    border: 2px solid #562974;
+                                    color: #562974;
+                                    font-size: 20px;
+                                    font-family: 'Indie Flower', cursive;
+                                    height: 5vh;
+                                    width: 100%;
+
+                                "
+                            />
+                            <br>
+                        <input
+                            type="date"
+                            name="deadline"
+                            id="deadline"
+                            placeholder="DD/MM/YYYY"
+                            required
+                            style=
+                            "
+                                margin-top: 15px;
+                                border-radius: 8px;
+                                float: left;;
+                                text-align: center;
+                                border: 2px solid #562974;
+                                color: #562974;
+                                width: 70%;
+                                height: 4vh;
+                            "
+                        /> 
+                        <input
+                            type="submit"
+                            name="post"
+                            id="post"
+                            value="POST"
+                            required
+                            style=
+                            "
+                                margin-top: 15px;
+                                border-radius: 8px;
+                                float: right;
+                                text-align: center;
+                                border: 2px solid #562974;
+                                width: 28%;
+                                height: 4vh;
+                                cursor: pointer;
+                            "
+                        /> 
+                    </form>
+                </p><br>
+                <p class="message">
+                </p>
+            </div>
+            <div class="modal-footer">
+                <h3>&copy; 2020 <a href="https://www.sauravdutt.tech/" style="text-decoration: none;">sauravdutt.tech</a></h3>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

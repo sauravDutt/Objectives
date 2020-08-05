@@ -1,0 +1,253 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100%;
+	font-size: 16px;
+	background-color: #fff;
+	margin: 20px;
+	font-family: 'Indie Flower', cursive;
+	
+}
+
+
+a {
+    text-decoration: none;
+    color: #562974;
+}
+/* Maain Section */
+
+
+.join-container {
+	max-width: 500px;
+	margin:  auto;
+	margin-top: 17vh;
+	color: rgb(94, 0, 117);
+	border: 2px solid ;
+	border: 2px solid rgb(94, 0, 117);
+	border-radius: 5px;
+	font-size: 1.3rem;
+}
+.join-container img {
+	margin-top: -40px;
+	margin-left: -21px;
+}
+.join-container a{
+	color: rgb(94, 0, 117);
+}
+
+.join-header {
+	text-align: center;
+	padding: 15px;
+	background: #EBF0F1;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: 2px solid rgb(94, 0, 117);
+	font-family: 'Poiret One', cursive;
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+.test {
+	padding: 30px 40px;
+	background: #EBF0F1;
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+}
+.footer{
+	text-align: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding-bottom: 0px;
+}
+.footer a {
+    text-decoration: none;
+	color: rgb(94, 0, 117);
+}
+	
+
+/* End of the Main section*/
+
+/* The Following is the code for the Modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ebf0f154;
+}
+.modalBrouse {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ebf0f154;
+}
+.modalAdd {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ebf0f154;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+	color: #562974;
+    width: 50%;
+    border: 2px solid #562974;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration:1.5s;
+
+}
+.modal-content-brouse{
+    background-color: #fff;
+    margin: 10% auto;
+	color: #562974;
+    width: 50%;
+    height: 60%;
+    overflow: auto;
+    border: 2px solid #562974;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration:1.5s;
+
+}
+.modal-content-add{
+    background-color: #fff;
+    margin: 10% auto;
+	color: #562974;
+    width: 50%;
+    border: 2px solid #562974;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration:1.5s;
+
+}
+.modal-header h2, .modal-footer h3{
+    margin: 0;
+}
+.modal-header {
+    padding: 15px;
+}
+.modal-body {
+    padding: 10px 20px;
+}
+.modal-footer {
+    padding: 10px;
+    text-align: center;
+}
+
+
+.closeBtn {
+    color: #562974;
+    float: right;
+    font-size: 40px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #bc75eb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#post:hover {
+    background-color: #562974;
+    color: #fff;
+}
+#search:hover {
+    background-color: #562974;
+    color: #fff;
+}
+.objecrives-body {
+    list-style: none;
+    margin-left: 5px;
+
+}
+.objecrives-body li {
+    text-decoration: none;
+}
+.message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.error {
+  
+    color: orangered;
+    padding: 5px;
+  }
+  
+  .success {
+    color: green;
+    padding: 5px;
+  }
+  .logo-main {
+      position: relative;
+    width: 10%; 
+    margin-left: -40px;
+  }
+@keyframes modalopen{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+/* End Of Modal*/
+
+@media(max-width: 600px) {
+    .join-container {
+        margin-top: 5vh;
+        overflow: hidden;
+    }
+    .modal-content, .modal-content-brouse, .modal-content-add {
+        margin: 7% auto;
+        width: 85%;
+    }
+    .modal-content-brouse {
+        height: 85vh;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    
+    .modal-content, .modal-content-brouse, .modal-content-add {
+        width: 85%;
+    }
+    .modal-content-brouse {
+        height: 85vh;
+    }
+    
+
+	.footer{
+		margin: 10px 0px 0px 0px;
+	}
+}
