@@ -1,1 +1,1 @@
-![](images/techtalk.gif)
+![](img/techtalk.gif)
