@@ -14,7 +14,7 @@
   "author": "Saurav Dutt",
   "license": "ISC",
   "dependencies": {
-    "electron": "^9.0.5",
+    "electron": "^18.3.7",
     "electron-installer-debian": "^3.0.0"
   },
   "devDependencies": {
